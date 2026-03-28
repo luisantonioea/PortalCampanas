@@ -1,28 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using PortalCampanas.Data;
 using System.Linq;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 
 namespace PortalCampanas.Controllers
 {
     public class CampanasController : Controller
     {
-develop
-        // 1. INDEX (Fusión: Tiene los Filtros, el Ordenamiento y el Layout)
-
-feature/mejora-layout
-        public IActionResult Index()
-{
-    // Modificamos esta misma zona para que choque directamente con los Filtros
-    var campanasOrdenadas = CampanaRepository.Campanas.OrderBy(c => c.Nombre).ToList();
-    
-    // Un mensaje de prueba para el layout
-    ViewBag.MensajeLayout = "Layout Mejorado Activo";
-    
-    return View(campanasOrdenadas);
-}
-
-main
         public IActionResult Index(string categoria, string estado)
         {
             var campanas = CampanaRepository.Campanas.OrderBy(c => c.Nombre).AsQueryable();
@@ -44,15 +28,18 @@ main
             return View(campanas.ToList());
         }
 
-        // 2. DETALLE DE CAMPAÑA
         public IActionResult Detalle(int id)
         {
             var campana = CampanaRepository.Campanas.FirstOrDefault(c => c.Id == id);
-            if (campana == null) return NotFound();
+            
+            if (campana == null) 
+            {
+                return NotFound();
+            }
+            
             return View(campana);
         }
 
-        // 3. RESUMEN DE INDICADORES
         public IActionResult Resumen()
         {
             var campanas = CampanaRepository.Campanas ?? new List<PortalCampanas.Models.Campana>();
@@ -70,6 +57,5 @@ main
 
             return View(resumen);
         }
-main
     }
 }

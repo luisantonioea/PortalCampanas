@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\PortalCampanas.csproj": {}
+    "C:\\Users\\lanto\\Desktop\\universidad\\fgda\\PortalCampanas\\PortalCampanas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\PortalCampanas.csproj": {
+    "C:\\Users\\lanto\\Desktop\\universidad\\fgda\\PortalCampanas\\PortalCampanas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\PortalCampanas.csproj",
+        "projectUniqueName": "C:\\Users\\lanto\\Desktop\\universidad\\fgda\\PortalCampanas\\PortalCampanas.csproj",
         "projectName": "PortalCampanas",
-        "projectPath": "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\PortalCampanas.csproj",
+        "projectPath": "C:\\Users\\lanto\\Desktop\\universidad\\fgda\\PortalCampanas\\PortalCampanas.csproj",
         "packagesPath": "C:\\Users\\lanto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\obj\\",
+        "outputPath": "C:\\Users\\lanto\\Desktop\\universidad\\fgda\\PortalCampanas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lanto\\AppData\\Roaming\\NuGet\\NuGet.Config"
