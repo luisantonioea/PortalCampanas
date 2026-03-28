@@ -6,6 +6,18 @@ namespace PortalCampanas.Controllers
 {
     public class CampanasController : Controller
     {
+feature/mejora-layout
+        public IActionResult Index()
+{
+    // Modificamos esta misma zona para que choque directamente con los Filtros
+    var campanasOrdenadas = CampanaRepository.Campanas.OrderBy(c => c.Nombre).ToList();
+    
+    // Un mensaje de prueba para el layout
+    ViewBag.MensajeLayout = "Layout Mejorado Activo";
+    
+    return View(campanasOrdenadas);
+}
+
         public IActionResult Index(string categoria, string estado)
 {
     // 1. Obtenemos todas las campañas de nuestra lista estática
@@ -44,5 +56,6 @@ namespace PortalCampanas.Controllers
 
             return View(campana);
         }
+main
     }
 }
