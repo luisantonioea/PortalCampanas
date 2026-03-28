@@ -2,6 +2,34 @@
 
 <h2>Campañas Comerciales</h2>
 
+<form asp-action="Index" method="get" class="mb-4 bg-light p-3 rounded">
+    <div class="row align-items-end">
+        <div class="col-md-3">
+            <label class="form-label fw-bold text-secondary">Categoría</label>
+            <select name="categoria" class="form-select">
+                <option value="">Todas</option>
+                <option value="Electro" selected="@(ViewBag.CategoriaSeleccionada == "Electro")">Electro</option>
+                <option value="Hogar" selected="@(ViewBag.CategoriaSeleccionada == "Hogar")">Hogar</option>
+                <option value="Moda" selected="@(ViewBag.CategoriaSeleccionada == "Moda")">Moda</option>
+                <option value="Tecnología" selected="@(ViewBag.CategoriaSeleccionada == "Tecnología")">Tecnología</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-bold text-secondary">Estado</label>
+            <select name="estado" class="form-select">
+                <option value="Todos">Todos</option>
+                <option value="Vigente" selected="@(ViewBag.EstadoSeleccionado == "Vigente")">Vigente</option>
+                <option value="Próxima" selected="@(ViewBag.EstadoSeleccionado == "Próxima")">Próxima</option>
+                <option value="Finalizada" selected="@(ViewBag.EstadoSeleccionado == "Finalizada")">Finalizada</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary me-2">Filtrar</button>
+            <a asp-action="Index" class="btn btn-outline-secondary">Limpiar</a>
+        </div>
+    </div>
+</form>
+
 <div class="row">
     @foreach (var item in Model)
     {
@@ -13,7 +41,7 @@
                         <small class="text-muted">🏷️ @item.Categoria | 📉 @item.DescuentoPct% | 📅 @item.FechaInicio.ToString("dd MMM. yyyy")</small><br />
                         <span class="badge bg-light text-dark">@item.Canal</span>
                     </p>
-                    <a href="#" class="btn btn-outline-secondary w-100">Ver detalle</a>
+                    <a asp-action="Detalle" asp-route-id="@item.Id" class="btn btn-outline-secondary w-100">Ver detalle</a>
                 </div>
             </div>
         </div>
