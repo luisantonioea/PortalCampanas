@@ -1,0 +1,42 @@
+@model PortalCampanas.Models.Campana
+
+<div class="mb-4">
+    <a asp-action="Index" class="text-decoration-none text-secondary">← Volver al listado</a>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="card-title mb-0">@Model.Nombre</h2>
+            <span class="badge bg-success fs-6">@Model.Estado</span>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <span class="text-muted d-block"><small>Categoría</small></span>
+                <strong>🏷️ @Model.Categoria</strong>
+            </div>
+            <div class="col-md-6 mb-3">
+                <span class="text-muted d-block"><small>Canal</small></span>
+                <strong>💻 @Model.Canal</strong>
+            </div>
+            <div class="col-md-6 mb-3">
+                <span class="text-muted d-block"><small>Inicio</small></span>
+                <strong>📅 @Model.FechaInicio.ToString("dd MMM yyyy")</strong>
+            </div>
+            <div class="col-md-6 mb-3">
+                <span class="text-muted d-block"><small>Fin</small></span>
+                <strong>📅 @Model.FechaFin.ToString("dd MMM yyyy")</strong>
+            </div>
+            <div class="col-md-6 mb-3">
+                <span class="text-muted d-block"><small>Descuento</small></span>
+                <strong>📉 @Model.DescuentoPct%</strong>
+            </div>
+        </div>
+
+        <div>
+            <span class="text-muted d-block mb-2"><strong>Descripción</strong></span>
+            <p>@Model.Descripcion</p>
+        </div>
+    </div>
+</div>
