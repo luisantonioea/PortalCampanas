@@ -7,7 +7,22 @@ namespace PortalCampanas.Controllers
 {
     public class CampanasController : Controller
     {
+develop
         // 1. INDEX (Fusión: Tiene los Filtros, el Ordenamiento y el Layout)
+
+feature/mejora-layout
+        public IActionResult Index()
+{
+    // Modificamos esta misma zona para que choque directamente con los Filtros
+    var campanasOrdenadas = CampanaRepository.Campanas.OrderBy(c => c.Nombre).ToList();
+    
+    // Un mensaje de prueba para el layout
+    ViewBag.MensajeLayout = "Layout Mejorado Activo";
+    
+    return View(campanasOrdenadas);
+}
+
+main
         public IActionResult Index(string categoria, string estado)
         {
             var campanas = CampanaRepository.Campanas.OrderBy(c => c.Nombre).AsQueryable();
@@ -55,5 +70,6 @@ namespace PortalCampanas.Controllers
 
             return View(resumen);
         }
+main
     }
 }
