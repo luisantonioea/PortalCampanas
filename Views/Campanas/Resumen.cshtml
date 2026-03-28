@@ -1,0 +1,38 @@
+@model PortalCampanas.Models.ResumenViewModel
+
+<h2 class="mb-4">Resumen de Indicadores</h2>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="card-title">Total Campañas</h6>
+                <h2 class="display-5 fw-bold mb-0">@Model.TotalCampanas</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="card-title">Vigentes</h6>
+                <h2 class="display-5 fw-bold mb-0">@Model.CampanasVigentes</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-info shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="card-title">Próximas</h6>
+                <h2 class="display-5 fw-bold mb-0">@Model.CampanasProximas</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-dark bg-warning shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="card-title">Promedio Dscto.</h6>
+                <h2 class="display-5 fw-bold mb-0">@Model.PromedioDescuento%</h2>
+            </div>
+        </div>
+    </div>
+</div>
