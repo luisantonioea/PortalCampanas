@@ -1,0 +1,21 @@
+@model IEnumerable<PortalCampanas.Models.Campana>
+
+<h2>Campañas Comerciales</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Nombre <span class="badge bg-success float-end">@item.Estado</span></h5>
+                    <p class="card-text">
+                        <small class="text-muted">🏷️ @item.Categoria | 📉 @item.DescuentoPct% | 📅 @item.FechaInicio.ToString("dd MMM. yyyy")</small><br />
+                        <span class="badge bg-light text-dark">@item.Canal</span>
+                    </p>
+                    <a href="#" class="btn btn-outline-secondary w-100">Ver detalle</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
