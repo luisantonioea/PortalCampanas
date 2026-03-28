@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lanto\\Desktop\\universidad\\trabajos\\PortalCampanas\\PortalCampanas.csproj",
+      "projectUniqueName": "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\PortalCampanas.csproj",
       "projectName": "PortalCampanas",
-      "projectPath": "C:\\Users\\lanto\\Desktop\\universidad\\trabajos\\PortalCampanas\\PortalCampanas.csproj",
+      "projectPath": "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\PortalCampanas.csproj",
       "packagesPath": "C:\\Users\\lanto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lanto\\Desktop\\universidad\\trabajos\\PortalCampanas\\obj\\",
+      "outputPath": "C:\\Users\\lanto\\Desktop\\universidad\\asdasdasda\\PortalCampanas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lanto\\AppData\\Roaming\\NuGet\\NuGet.Config"
