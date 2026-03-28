@@ -22,15 +22,16 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-<<<<<<< HEAD
 [C:/Users/lanto/Desktop/universidad/asdasdasda/PortalCampanas/Views/Campanas/Detalle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuYXNcRGV0YWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-=======
->>>>>>> feature/mejora-layout
 [C:/Users/lanto/Desktop/universidad/asdasdasda/PortalCampanas/Views/Campanas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lanto/Desktop/universidad/asdasdasda/PortalCampanas/Views/Campanas/Resumen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuYXNcUmVzdW1lbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lanto/Desktop/universidad/asdasdasda/PortalCampanas/Views/Home/Index.cshtml]
